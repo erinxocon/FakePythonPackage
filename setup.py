@@ -4,10 +4,11 @@ from codecs import open
 
 
 #get version number from package init
-with open('tpfd/__init__.py', 'r') as fd:
+with open('fake/__init__.py', 'r') as fd:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
                         fd.read(), re.MULTILINE).group(1)
 
+with open('fake/__init__.py', 'r') as fd:
     license = re.search(r'^__license__\s*=\s*[\'"]([^\'"]*)[\'"]',
                         fd.read(), re.MULTILINE).group(1)
 
