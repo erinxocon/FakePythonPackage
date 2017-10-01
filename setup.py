@@ -16,7 +16,7 @@ with open('fake/__init__.py', 'r') as fd:
 with open('README.rst', 'r', 'utf-8') as f:
     readme = f.read()
 
-CLASSIFIERS = (
+CLASSIFIERS = [
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'Programming Language :: Python',
@@ -25,7 +25,7 @@ CLASSIFIERS = (
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: Implementation :: PyPy')
+        'Programming Language :: Python :: Implementation :: PyPy']
 
 
 setup(name='FakePythonPackage',
